@@ -6,12 +6,32 @@
 
 using namespace std;
 
-const vector<string> WORDS = {
-    "AUTOMOBILE", "NETWORKING", "PRACTICAL", "CONGRESS", "COMMANDER",
-    "STAPLER", "ENTERPRISE", "ESCALATION", "HAPPINESS", "WEDNESDAY",
-    "THUNDER", "MARATHON", "LABORATORY", "HARBINGER", "SUNSHINE",
-    "JOURNEY", "FANTASTIC", "DISCOVERY", "BOOKCASE", "HANGMAN"
-};
+static const vector<string> getWords() {
+    vector<string> words;
+    words.push_back("AUTOMOBILE");
+    words.push_back("NETWORKING");
+    words.push_back("PRACTICAL");
+    words.push_back("CONGRESS");
+    words.push_back("COMMANDER");
+    words.push_back("STAPLER");
+    words.push_back("ENTERPRISE");
+    words.push_back("ESCALATION");
+    words.push_back("HAPPINESS");
+    words.push_back("WEDNESDAY");
+    words.push_back("THUNDER");
+    words.push_back("MARATHON");
+    words.push_back("LABORATORY");
+    words.push_back("HARBINGER");
+    words.push_back("SUNSHINE");
+    words.push_back("JOURNEY");
+    words.push_back("FANTASTIC");
+    words.push_back("DISCOVERY");
+    words.push_back("BOOKCASE");
+    words.push_back("HANGMAN");
+    return words;
+}
+
+const vector<string> WORDS = getWords();
 const string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const int MAX_WRONG = 6;
 int used[26] = {0};
