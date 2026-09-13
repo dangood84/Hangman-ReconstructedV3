@@ -18,7 +18,7 @@ Dim blnGameRunning
 
 Dim objFso, objFileHandle
 Dim strWordListFile, strFileContents
-Dim arrWordList(), intWordCount
+Dim arrWordList, intWordCount
 
 Const WELCOME        = "Welcome to HANGMAN!"
 Const ALPHABET       = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -111,7 +111,7 @@ Select Case intHowEnded
 End Select
 
 Sub InitializeGame()
-    ReDim aintLetterUsed(0 To 25)
+    ReDim aintLetterUsed(25)
     For intLetterCtr = 0 To 25
         aintLetterUsed(intLetterCtr) = 0
     Next
@@ -185,7 +185,7 @@ Function PickRandomWord()
 End Function
 
 Function BuildHangman(intMisses)
-    Dim arrStages(0 To 6)
+    Dim arrStages(6)
 
     arrStages(0) = "   +---+" & vbCrLf & "   |   |" & vbCrLf & "       |" & vbCrLf & "       |" & vbCrLf & "       |" & vbCrLf & "       |" & vbCrLf & "  ======="
     arrStages(1) = "   +---+" & vbCrLf & "   |   |" & vbCrLf & "   O   |" & vbCrLf & "       |" & vbCrLf & "       |" & vbCrLf & "       |" & vbCrLf & "  ======="
