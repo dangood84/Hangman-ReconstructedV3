@@ -1,0 +1,65 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Node.js / JavaScript / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.tsbuildinfo
+dist/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# C / C++
+*.o
+*.obj
+*.out
+*.exe
+*.dll
+*.dylib
+*.so
+*.a
+*.lib
+*.pdb
+
+# Pascal / Fortran / Prolog
+*.ppu
+*.mod
+*.smod
+*.qlf
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.pytest_cache
+*.mypy_cache
+*.coverage
+coverage.xml
+*.egg-info/
+dist/
+
+# Compiled smoke-test binaries
+hangman_c
+hangman_cpp
+hangman_pas
+hangman_f90
+HangmanReconstructedV3

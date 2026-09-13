@@ -1,0 +1,13 @@
+{
+  "name": "hangman-reconstructed-v3",
+  "version": "1.0.0",
+  "description": "A multi-language reconstruction of the V3 Hangman VBScript game.",
+  "main": "HangmanReconstructedV3.js",
+  "type": "module",
+  "scripts": {
+    "start": "node HangmanReconstructedV3.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
